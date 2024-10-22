@@ -1,0 +1,3 @@
+/home/gvynt/algorithms/uraninite/cmake-build-debug/CMakeFiles/uraninite.dir
+/home/gvynt/algorithms/uraninite/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/gvynt/algorithms/uraninite/cmake-build-debug/CMakeFiles/rebuild_cache.dir

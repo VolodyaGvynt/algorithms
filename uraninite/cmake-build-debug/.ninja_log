@@ -1,0 +1,7 @@
+# ninja log v6
+6	402	1729616009680817771	CMakeFiles/uraninite.dir/main.cpp.o.ddi	2668f685f152ce78
+402	418	1729616010090803229	CMakeFiles/uraninite.dir/CXX.dd	211e8dcdff9c4d2a
+402	418	1729616010090803229	/home/gvynt/algorithms/uraninite/cmake-build-debug/CMakeFiles/uraninite.dir/CXXModules.json	211e8dcdff9c4d2a
+402	418	1729616010090803229	CMakeFiles/uraninite.dir/main.cpp.o.modmap	211e8dcdff9c4d2a
+419	1304	1729616010094136444	CMakeFiles/uraninite.dir/main.cpp.o	c51f870e4ad79b6f
+1305	1436	1729616010980771658	uraninite	dedcd9fccf08faa
