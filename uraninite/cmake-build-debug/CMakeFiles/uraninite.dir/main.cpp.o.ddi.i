@@ -43428,84 +43428,61 @@ namespace std __attribute__ ((__visibility__ ("default")))
 using std::cin;
 using std::cout;
 
-struct peasant
-{
-    int performance;
-    int loss;
+struct peasant {
+    int16_t performance;
+    int16_t performance_loss;
 };
 
-int main()
+int32_t main()
 {
     std::ios_base::sync_with_stdio(false);
     std::cin.tie(nullptr);
     std::cout.tie(nullptr);
 
-    int t;
+    int16_t t;
     cin >> t;
 
-    for (int i = 0; i < t; ++i)
-    {
-        int psnt_qty, rqst_qty, mass;
-        cin >> psnt_qty >> rqst_qty >> mass;
+    for (int16_t i = 0; i < t; ++i) {
+        int16_t peasant_qty;
+        int32_t request_qty, target_mass;
+        cin >> peasant_qty >> request_qty >> target_mass;
+        auto peasants = new peasant[peasant_qty];
+        auto requests = new int16_t[request_qty];
 
-        auto psnt_crew = new peasant[psnt_qty];
-        auto requests = new int[rqst_qty];
-        auto days_performance = new int32_t[rqst_qty];
-        int success_counter = 0;
-
-        for (int j = 0; j < psnt_qty; ++j)
-        {
-            cin >> psnt_crew[j].performance >> psnt_crew[j].loss;
+        for (int16_t j = 0; j < peasant_qty; ++j) {
+            cin >> peasants[j].performance >> peasants[j].performance_loss;
         }
-
-        for (int j = 0; j < rqst_qty; ++j)
-        {
+        for (int32_t j = 0; j < request_qty; ++j) {
             cin >> requests[j];
         }
 
-        for (int j = 0; j < rqst_qty; ++j)
-        {
-            int total_performance = 0;
+        int32_t success_counter = 0;
+
+        for (int32_t j = 0; j < request_qty; ++j) {
+            int64_t total_performance = 0;
+            int32_t n = requests[j];
+            for (int16_t k = 0; k < peasant_qty; ++k) {
+                int16_t a = peasants[k].performance;
+                int16_t d = peasants[k].performance_loss;
+
+                int32_t performance_max = a / d + 1;
+                n = (performance_max > n) ? n : performance_max;
+
+                total_performance += n * (2 * a + (n - 1) * -d) / 2;
 
 
-            for (int k = 0; k < requests[j]; ++k)
-            {
-                for (int l = 0; l < psnt_qty; ++l)
-                {
-                    int curr_performance = psnt_crew[l].performance;
-                    curr_performance -= psnt_crew[l].loss * k;
 
-                    if (curr_performance > 0)
-                    {
-                        total_performance += curr_performance;
-                    }
-                }
+            }
+            if (total_performance >= target_mass) {
+                ++success_counter;
             }
 
-            days_performance[j] = total_performance;
-
-            if (total_performance >= mass)
-            {
-                success_counter++;
-            }
-
+            cout << total_performance << ' ';
         }
+        cout << '\n' << success_counter << '\n';
 
-
-
-
-
-
-        for (int day = 0; day < rqst_qty; ++day)
-        {
-            cout << days_performance[day] << " ";
-        }
-
-        cout << "\n" << success_counter << "\n";
-
-
-        delete [] psnt_crew;
-        delete [] requests;
-        delete [] days_performance;
+        delete[] peasants;
+        delete[] requests;
     }
+
 }
