@@ -7,7 +7,12 @@ using std::cout;
 struct peasant {
     int16_t performance;
     int16_t performance_loss;
-    int16_t performance_max = performance / performance_loss + 1;
+    int32_t performance_max;
+
+    void set_performance_max() {
+        performance_max = performance / performance_loss + 1;
+    }
+
 };
 
 int32_t main()
@@ -27,6 +32,7 @@ int32_t main()
 
         for (int16_t j = 0; j < peasant_qty; ++j) {
             cin >> peasants[j].performance >> peasants[j].performance_loss;
+            peasants[j].set_performance_max();
         }
 
         int32_t success_counter = 0;
@@ -38,7 +44,7 @@ int32_t main()
                 const int16_t a = peasants[k].performance;
                 const int16_t d = peasants[k].performance_loss;
 
-                int32_t n = (a / d + 1 > request) ? request : a / d + 1;
+                int32_t n = (peasants[k].performance_max > request) ? request : peasants[k].performance_max;
 
                 total_performance += n * (2 * a + (n - 1) * -d) / 2;
             }
