@@ -1,0 +1,3 @@
+/home/gvynt/interfaces/universe_lowest_prices/cmake-build-debug/CMakeFiles/universe_lowest_prices.dir
+/home/gvynt/interfaces/universe_lowest_prices/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/gvynt/interfaces/universe_lowest_prices/cmake-build-debug/CMakeFiles/rebuild_cache.dir
