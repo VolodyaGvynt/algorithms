@@ -1,3 +1,0 @@
-/home/gvynt/interfaces/safe_of_paradox/cmake-build-debug/CMakeFiles/safe_of_paradox.dir
-/home/gvynt/interfaces/safe_of_paradox/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/gvynt/interfaces/safe_of_paradox/cmake-build-debug/CMakeFiles/rebuild_cache.dir
