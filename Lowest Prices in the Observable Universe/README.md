@@ -1,8 +1,8 @@
-\# Task "Lowest Prices in the Observable Universe"
+# Task "Lowest Prices in the Observable Universe"
 
 
 
-\## Problem Statement
+## Problem Statement
 
 
 
@@ -26,7 +26,7 @@ We assume that at least one checkout must exist in the store at any moment. In c
 
 
 
-\## Input
+## Input
 
 
 
@@ -52,7 +52,7 @@ f ∈ ('o','z','k')
 
 
 
-\## Output
+## Output
 
 
 
@@ -72,9 +72,9 @@ Information about checkouts should be displayed in one line and should be separa
 
 
 
-\## Example:
+## Example:
 
-\### Input:
+### Input:
 
 ```
 
@@ -114,7 +114,7 @@ k 8 4
 
 
 
-\### Output:
+### Output:
 
 ```
 
@@ -124,7 +124,7 @@ K0: z, K1: z, K2: 4o 136s, K3: z, K4: 5o 147s
 
 
 
-\### Program Operation Schema:
+### Program Operation Schema:
 
 ```
 
