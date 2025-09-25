@@ -1,8 +1,8 @@
-\# Task "Janusz's Mission"
+# Task "Janusz's Mission"
 
 
 
-\## Problem Statement
+## Problem Statement
 
 
 
@@ -26,7 +26,7 @@ Can Janusz achieve system stabilization? Sometimes success seems impossible, but
 
 
 
-\## Input:
+## Input:
 
 The program receives a natural number \*\*t\*\* on input, indicating the number of tests. Then \*\*t\*\* data sets are given. Each set consists of three natural numbers \*\*n\*\*, \*\*m\*\*, and \*\*s\*\* indicating the number of points, the number of connections between them, and the number of the point from which timeline repair begins. In the next \*\*m\*\* lines there are pairs of natural numbers \*\*x\*\* and \*\*y\*\* – which inform that the decision at time point number \*\*x\*\* leads to point number \*\*y\*\*. It should be assumed that the same connections will not appear multiple times nor loops (i.e., connections that start and end at the same point). Points are numbered from 0.
 
@@ -36,7 +36,7 @@ The program receives a natural number \*\*t\*\* on input, indicating the number 
 
 
 
-\## Output:
+## Output:
 
 
 
@@ -44,9 +44,9 @@ For each test, the program should output \*\*NO\*\* if there's no possibility fo
 
 
 
-\## Example:
+## Example:
 
-\### Input:
+### Input:
 
 ```
 
@@ -86,7 +86,7 @@ For each test, the program should output \*\*NO\*\* if there's no possibility fo
 
 
 
-\### Output:
+### Output:
 
 ```
 

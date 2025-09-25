@@ -1,8 +1,8 @@
-\# Task "Vehicle Break-in"
+# Task "Vehicle Break-in"
 
 
 
-\## Problem Statement
+## Problem Statement
 
 
 
@@ -70,7 +70,7 @@ Write a program that will make Grażyna's work easier.
 
 
 
-\## Input
+## Input
 
 
 
@@ -88,7 +88,7 @@ The first line of input contains a natural number n - the number of time travels
 
 
 
-\## Output
+## Output
 
 
 
@@ -110,9 +110,9 @@ In the last line of output, include additional information about whether the eng
 
 
 
-\## Example:
+## Example:
 
-\### Input:
+### Input:
 
 ```
 
@@ -154,7 +154,7 @@ In the last line of output, include additional information about whether the eng
 
 
 
-\### Output:
+### Output:
 
 ```
 
